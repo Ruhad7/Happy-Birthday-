@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday</title>
+  <style>
+    body {
+      background: white;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+    h1 {
+      font-size: 3em;
+      color: #ff4081;
+      animation: bounce 2s infinite;
+    }
+    p {
+      font-size: 1.5em;
+      color: #333;
+    }
+    .balloon {
+      position: absolute;
+      bottom: -150px;
+      width: 50px;
+      height: 70px;
+      background: pink;
+      border-radius: 50%;
+      animation: float 6s ease-in infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-110vh); }
+    }
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+      40% { transform: translateY(-30px); }
+      60% { transform: translateY(-15px); }
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 Happy Birthday 🎉</h1>
+  <p>This is for your birthday breakfast, love you ❤️</p>
+
+  <!-- Balloons -->
+  <div class="balloon" style="left: 10%; background: red;"></div>
+  <div class="balloon" style="left: 30%; background: blue;"></div>
+  <div class="balloon" style="left: 50%; background: green;"></div>
+  <div class="balloon" style="left: 70%; background: purple;"></div>
+  <div class="balloon" style="left: 90%; background: orange;"></div>
+
+  <!-- Music -->
+  <audio autoplay loop>
+    <source src="https://www2.cs.uic.edu/~i101/SoundFiles/StarWars60.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+</body>
+</html>
